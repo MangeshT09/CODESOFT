@@ -1,0 +1,830 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(129, 139, 152);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.logo1 {
+  height: 100px;
+}
+
+
+.bt-2 {
+  border: none;
+  width: 90px;
+  padding: 10px 10px;
+  color: white;
+  background-color: rgb(39, 26, 86);
+  box-shadow: 5px 5px 15px 0px black;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: all 2ms ease-in-out;
+  cursor: pointer;
+}
+
+.bt-2:hover {
+  background-color: rgb(63, 47, 135);
+
+}
+
+
+
+
+@media screen and (max-width: 770px) {
+  .header a {
+    /* float: none;  */
+    text-align: right;
+    display: flex;
+
+  }
+
+  .header-right {
+    float: none;
+    display: none;
+  }
+
+  .header {
+    padding: 10px 10px;
+  }
+
+  .bt-1 {
+    margin-left: 60%;
+  }
+
+  .container .filterDiv {
+    width: 150px;
+    line-height: 30px;
+  margin: 20px;
+  }
+
+
+}
+
+
+
+
+@media screen and (max-width: 430px) {
+  .header a {
+    /* float: none;  */
+    text-align: right;
+    display: flex;
+
+  }
+
+  .bt-1 {
+    margin-left: 40%;
+    font-size: 20px;
+  }
+
+  .header a.logo {
+    font-size: 20px;
+
+    font-weight: bold;
+  }
+
+
+  .vertical-center button {
+
+    font-size: 10px;
+    padding: 6px 6px;
+
+  }
+
+  .vertical-center h1 {
+    font-size: 30px;
+  }
+
+  .vertical-center p {
+    font-size: 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 325px) {
+  .header a {
+    /* float: none;  */
+    text-align: right;
+    display: flex;
+
+  }
+
+  .vertical-center button {
+
+    font-size: 10px;
+    padding: 6px 6px;
+
+  }
+
+  .vertical-center h1 {
+    font-size: 30px;
+  }
+
+  .vertical-center p {
+    font-size: 20px;
+  }
+
+
+  .bt-1 {
+    margin-left: 100px;
+    font-size: 20px;
+  }
+
+  .header a.logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .container .filterDiv {
+    width: 260px;
+    line-height: 50px;
+  }
+
+}
+
+
+@media screen and (min-width:780px) {
+  .bt-1 {
+    display: none;
+  }
+ 
+}
+
+@media screen and (max-width: 1025px) {
+  #about .img1 img{
+    padding-top: 40px;
+    height: 280px;
+}
+#about .text-1 button{
+  margin-left: 195px;
+}
+.container .filterDiv {
+  width: 260px;
+  line-height: 50px;
+margin: 30px;
+}
+
+
+}
+
+
+.bt-1 {
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.header-right .img-1 {
+  height: 20px;
+  margin-right: 7px;
+}
+
+
+
+
+
+
+/* responsive images */
+
+.res-img {
+  width: 100vw;
+  height: 700px;
+}
+
+
+
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  align-items: center;
+  /* bottom: 8px; */
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  margin-left: 10%;
+  color: white;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.vertical-center button {
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  background-color: rgb(26, 17, 60);
+  box-shadow: 5px 9px 9px 0px black;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: all 2ms ease-in-out;
+  cursor: pointer;
+
+}
+
+.vertical-center button:hover {
+  background-color: rgb(67, 19, 111);
+  box-shadow: 5px 10px 10px 0px black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+
+
+/* mobiles */
+
+.main-card {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 10px rgba(9, 9, 9, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #333333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card p {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card button {
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  background-color: rgb(25, 24, 24);
+  box-shadow: 0px 0px 5px 5px rgba(9, 9, 9, 0.1);
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card button:hover {
+  background-color: #313030;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 430px) {
+  .main-card {
+    flex-direction: column;
+
+  }
+
+  .card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:376px) {
+  .about .img1 img {
+    width: 100vw;
+  }
+
+}
+
+
+/* about us */
+
+.about {
+  max-width: 100vw;
+  max-height: 750px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about .img1 img {
+  height: 450px;
+}
+
+.about .text-1 h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about .text-1 {
+  text-justify: auto;
+  padding: 50px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.about .text-1 button {
+  border: none;
+  padding: 10px 10px;
+  margin-top: 40px;
+  margin-left: 350px;
+  color: white;
+  background-color: rgb(25, 24, 24);
+  box-shadow: 5px 5px 9px 0px rgb(94, 93, 93);
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: all 1s ease-in-out;
+}
+
+.about .text-1 button:hover {
+  box-shadow: 5px 5px 10px 0px black;
+  transform: scale(1.1);
+}
+
+
+.img-mobile {
+  width: 100%;
+}
+
+
+@media screen and (max-width:770px) {
+  .about .img1 img {
+    margin-top: 40px;
+    height: 180px;
+  }
+
+  .about .text-1 {
+    padding: 15px;
+  }
+
+  .about .text-1 button {
+    margin-left: 150px;
+    margin-top: 0px;
+  }
+}
+
+
+@media screen and (max-width:430px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about .img1 img {
+    margin-top: 40px;
+    height: 240px;
+  }
+
+  .about .text-1 {
+    padding: 15px;
+
+  }
+
+  .about .text-1 button {
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 10px 10px;
+
+  }
+}
+
+@media screen and (max-width:330px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about .img1 img {
+    margin-top: 40px;
+    height: 180px;
+  }
+
+  .about .text-1 {
+    padding: 15px;
+
+  }
+
+  .about .text-1 button {
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 10px 10px;
+
+  }
+}
+
+
+
+
+/* footer */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.container1 {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: auto; */
+}
+
+.footer-col1 ul {
+  list-style: none;
+}
+
+.footer1 {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col1 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col1 h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col1 h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col1 ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col1 ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col1 ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col1 .social-links1 a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col1 .social-links1 a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 1440px) {
+  .footer-col1 {
+    width: 25%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col1 {
+    width: 100%;
+  }
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #cacace;
+  box-shadow: 2px 2px 10px 0px rgb(79, 78, 78);
+  color: #1b1616;
+  width: 300px;
+  line-height: 80px;
+  text-align: center;
+  margin: 55px;
+  display: none;
+}
+
+.filterDiv:hover {
+  box-shadow: 5px 5px 20px 0px rgb(79, 78, 78);
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.img-filter {
+  width: 280px;
+  height: 270px;
+}
+
+.container button {
+  width: 100px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #313030;
+}
+
+.container button:hover {
+  background-color: #100f0f;
+  color: #fef5f5;
+}
