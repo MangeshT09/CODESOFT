@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-64003.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px  black;
+    overflow: hidden;
+    width: 300px;
+    padding: 15px;
+}
+
+.display {
+    background-color: #b3b1b1;
+    color: #070707;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 inset rgb(106, 105, 105);
+   
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    padding: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    background-color: #d6d5d5;
+    border: 1px solid #e0dcdc;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #bdbaba;
+  
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+@media (max-width: 310px) {
+    .calculator {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
